@@ -78,9 +78,10 @@ export default ProjectsPage
 // CSS in JSX
 const styles = {
   container: {
-    maxWidth: 800,
+    width: "70vw",
     margin: "0 auto",
-    padding: "2rem",
+    padding: "0.5rem",
+    marginLeft: "1vw",
   },
   pageTitle: {
     fontSize: "2.5rem",

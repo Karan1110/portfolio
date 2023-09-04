@@ -12,6 +12,8 @@ const styles = {
     marginBottom: "7vh",
     height: "60vh",
     backgroundColor: "#fff",
+    width: "70vw",
+    marginLeft: "1.5vw",
   },
   title: {
     color: "#333",
@@ -20,7 +22,7 @@ const styles = {
     marginBottom: "20px",
   },
   textarea: {
-    width: "75vw",
+    width: "65vw",
     borderRadius: "5px",
     padding: "10px",
     border: "1px solid #ccc",
@@ -99,10 +101,10 @@ const HireMe = () => {
       <input
         style={{
           height: "50px",
-          width: "70vw",
           margin: "10px",
           borderRadius: "30px",
           padding: 7,
+          width: "65vw",
         }}
         placeholder="kindly enter the Subject"
         onChange={(e) => setSubject(e.target.value)}
@@ -110,7 +112,7 @@ const HireMe = () => {
       <input
         style={{
           height: "50px",
-          width: "70vw",
+          width: "65vw",
           margin: "10px",
           borderRadius: "30px",
           padding: 7,

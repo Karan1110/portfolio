@@ -36,9 +36,9 @@ export default AboutMe
 const styles = {
   container: {
     width: "70vw",
-    padding: "2rem",
+    padding: "1rem",
     borderRadius: "8px",
-    marginLeft: "10vw",
+    marginLeft: "1vw",
     marginTop: "30px",
     boxShadow:
       "2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1), -2px -2px 2px rgba(0.1, 0.1, 0.1, 0.1), 2px -2px 2px rgba(0.1, 0.1, 0.1, 0.1), -2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1)",
