@@ -30,7 +30,7 @@ function App() {
       style={{
         backgroundImage: `url(https://media.istockphoto.com/id/1044136070/photo/holographic-neon-shiny-background-minimalist-style-millennial-colors.webp?b=1&s=170667a&w=0&k=20&c=9wtFW5xQKEozXaAAuawl-Mfah5afP22r4cPCbC3fDs8=)`,
         backgroundSize: "cover", // Use "cover" to cover the entire element
-        width: "99vw", // Use "100vw" for viewport width
+        width: "109%", // Use "100vw" for viewport width
         height: "100%", // Use "100vh" for viewport height
         margin: -8,
         display: "flex",
@@ -89,44 +89,49 @@ function App() {
 }
 const styles = {
   container: {
-    backgroundImage: `url(https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)`,
-    // backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    height: "100%",
-    width: "100%",
+    // backgroundColor: "#f0f2f5",
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   navbar: {
-    backgroundColor: "#222",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: "0.0001rem 0.3rem",
+    margin: "10px",
+    borderRadius: 150,
+    // backgroundColor: "#4267b2",
     color: "#fff",
-    margin: "0",
-    borderRadius: 80,
-    width: "94vw",
-    height: "10vh",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 20px",
+    width: "87%",
+    boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.1)",
   },
   logo: {
-    fontSize: "1rem",
+    fontSize: "24px",
     fontWeight: "bold",
   },
   navList: {
     listStyleType: "none",
     display: "flex",
-    gap: "0.5rem",
+    gap: "20px",
   },
   navItem: {
-    margin: "3vw",
-    fontSize: "3vw",
+    fontSize: "4vw",
     fontWeight: "bold",
     cursor: "pointer",
-    textDecoration: "none",
-    color: "#fff",
+    color: "black",
+    opacity: "50%",
     transition: "color 0.3s ease-in-out",
   },
-  "navItem:hover": {
-    color: "#ff6b6b",
+  content: {
+    width: "100%",
+    maxWidth: "800px",
+    marginTop: "20px",
+    padding: "20px",
+    backgroundColor: "#fff",
+    borderRadius: "8px",
+    boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.1)",
   },
 }
 
