@@ -30,9 +30,9 @@ function App() {
       style={{
         backgroundImage: `url(https://media.istockphoto.com/id/1044136070/photo/holographic-neon-shiny-background-minimalist-style-millennial-colors.webp?b=1&s=170667a&w=0&k=20&c=9wtFW5xQKEozXaAAuawl-Mfah5afP22r4cPCbC3fDs8=)`,
         backgroundSize: "cover", // Use "cover" to cover the entire element
-        width: "109%", // Use "100vw" for viewport width
+        width: "100%", // Use "100vw" for viewport width
         height: "100%", // Use "100vh" for viewport height
-        margin: -8,
+        margin: -7,
         display: "flex",
         flexDirection: "column",
         gap: "3vw",
@@ -96,32 +96,37 @@ const styles = {
     alignItems: "center",
   },
   navbar: {
-    margin: "10px",
+    opacity: "90%",
     borderRadius: 150,
-    // backgroundColor: "#4267b2",
+    backgroundColor: "white",
+    position: "sticky",
+    top: 7,
     color: "#fff",
+    paddingTop: "2vh",
+    paddingBottom: "2vh",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "10px 20px",
-    width: "87%",
+    width: "42.5vh",
+    height: "2vh",
     boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.1)",
   },
   logo: {
-    fontSize: "24px",
+    fontSize: "10px",
     fontWeight: "bold",
   },
   navList: {
     listStyleType: "none",
     display: "flex",
-    gap: "20px",
   },
   navItem: {
-    fontSize: "4vw",
+    margin: "0.7vh",
+    fontSize: "1.8vh",
     fontWeight: "bold",
     cursor: "pointer",
-    color: "black",
-    opacity: "50%",
+    color: "grey",
+    fontFamily: "Lato, sans-serif",
+    // opacity: "100%",
     transition: "color 0.3s ease-in-out",
   },
   content: {
