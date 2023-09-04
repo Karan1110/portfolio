@@ -78,11 +78,10 @@ export default ProjectsPage
 // CSS in JSX
 const styles = {
   container: {
-    width: "70vw",
-    margin: "0 auto",
-    marginRight: "10vw",
+    width: "95vw",
+    marginRight: "1vw",
     padding: "0.5rem",
-    marginLeft: "1vw",
+    marginLeft: "4vw",
   },
   pageTitle: {
     fontSize: "2.5rem",
@@ -112,11 +111,17 @@ const styles = {
     textDecoration: "underline",
   },
   button: {
-    backgroundColor: "purple",
+    backgroundColor: "#4285F4", // Google blue
     borderRadius: "15px",
+    borderColor: "#4285F4",
     padding: "0.5rem",
+    color: "#ffffff", // White text
     transition: "background-color 0.3s ease", // Add a smooth transition for the hover effect
     cursor: "pointer",
+  },
+
+  "button:hover": {
+    backgroundColor: "#357AE8", // Lighter blue on hover
   },
   projects: {
     display: "grid",

@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div style={styles.container}>
       <div style={styles.content}>
-        <h2 style={styles.title}>About Me</h2>
+        <h2 style={styles.title}>Karan CS</h2>
         <p className="description">
           I am a passionate developer who loves building amazing web
           applications. With a strong focus on user experience, I strive to
@@ -40,8 +40,6 @@ const styles = {
     borderRadius: "8px",
     marginLeft: "1vw",
     marginTop: "30px",
-    boxShadow:
-      "2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1), -2px -2px 2px rgba(0.1, 0.1, 0.1, 0.1), 2px -2px 2px rgba(0.1, 0.1, 0.1, 0.1), -2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1)",
   },
   content: {
     textAlign: "center",
@@ -50,6 +48,7 @@ const styles = {
     fontSize: "2rem",
     fontWeight: "bold",
     marginBottom: "1rem",
+    textDecoration: "underline",
   },
   description: {
     fontSize: "1.2rem",
@@ -67,6 +66,6 @@ const styles = {
     margin: 4,
     backgroundColor: "#f9f9f9",
     padding: "0.5rem 1rem",
-    borderRadius: "2px",
+    borderRadius: "50px",
   },
 }

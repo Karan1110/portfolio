@@ -3,6 +3,7 @@ import ExperiencePage from "./pages/Experience"
 import ProjectsPage from "./pages/Projects"
 import React, { useRef } from "react"
 import HireMe from "./pages/HireMe"
+import "./aboutme.css"
 
 function App() {
   const aboutRef = useRef(null)
@@ -27,15 +28,17 @@ function App() {
 
   return (
     <div
+      className="container"
       style={{
         backgroundImage: `url(https://media.istockphoto.com/id/1044136070/photo/holographic-neon-shiny-background-minimalist-style-millennial-colors.webp?b=1&s=170667a&w=0&k=20&c=9wtFW5xQKEozXaAAuawl-Mfah5afP22r4cPCbC3fDs8=)`,
         backgroundSize: "cover", // Use "cover" to cover the entire element
-        width: "100%", // Use "100vw" for viewport width
+        width: "98vw", // Use "100vw" for viewport width
         height: "100%", // Use "100vh" for viewport height
-        margin: -7,
+        margin: -8,
         display: "flex",
         flexDirection: "column",
-        gap: "3vw",
+        // gap: "3vw",
+        justifyContent: "center",
         alignItems: "center",
       }}
     >
@@ -88,26 +91,19 @@ function App() {
   )
 }
 const styles = {
-  container: {
-    // backgroundColor: "#f0f2f5",
-    minHeight: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
   navbar: {
-    opacity: "90%",
+    opacity: "80%",
     borderRadius: 150,
     backgroundColor: "white",
     position: "sticky",
-    top: 7,
+    top: 20, // Adjust to "bottom" if you want it at the
     color: "#fff",
     paddingTop: "2vh",
     paddingBottom: "2vh",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    width: "42.5vh",
+    width: "48vh",
     height: "2vh",
     boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.1)",
   },

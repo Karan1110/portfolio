@@ -74,10 +74,10 @@ export default ExperiencePage
 // CSS in JSX
 const styles = {
   container: {
-    width: "75vw",
+    width: "90vw",
     margin: "0 auto",
     padding: "0.5rem",
-    opacity: "90%",
+    opacity: "100%",
     marginLeft: "1vw",
   },
   pageTitle: {
