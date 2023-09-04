@@ -110,7 +110,7 @@ const styles = {
   },
   responsibilities: {
     listStyleType: "circle",
-    marginLeft: "2rem",
+    marginLeft: "-2.1rem",
     color: "#555",
     fontWeight: "bold",
   },

@@ -31,14 +31,15 @@ function App() {
         backgroundImage: `url(https://media.istockphoto.com/id/1044136070/photo/holographic-neon-shiny-background-minimalist-style-millennial-colors.webp?b=1&s=170667a&w=0&k=20&c=9wtFW5xQKEozXaAAuawl-Mfah5afP22r4cPCbC3fDs8=)`,
         backgroundSize: "cover", // Use "cover" to cover the entire element
         width: "99vw", // Use "100vw" for viewport width
-        height: "660vh", // Use "100vh" for viewport height
+        height: "100%", // Use "100vh" for viewport height
         margin: -8,
+        display: "flex",
+        flexDirection: "column",
+        gap: "3vw",
+        alignItems: "center",
       }}
     >
       <nav className="navbar" style={styles.navbar}>
-        <div className="logo">
-          <h2 style={styles.logo}>My Portfolio</h2>
-        </div>
         <ul className="nav-list" style={styles.navList}>
           <li
             className="nav-item"
@@ -97,16 +98,17 @@ const styles = {
   navbar: {
     backgroundColor: "#222",
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
-    padding: "0.0001rem 2rem",
+    padding: "0.0001rem 0.3rem",
     color: "#fff",
     margin: "0",
-    borderRadius: 100,
-    width: "66vw",
+    borderRadius: 80,
+    width: "94vw",
+    height: "10vh",
   },
   logo: {
-    fontSize: "1.5rem",
+    fontSize: "1rem",
     fontWeight: "bold",
   },
   navList: {
@@ -115,7 +117,8 @@ const styles = {
     gap: "0.5rem",
   },
   navItem: {
-    fontSize: "0.7rem",
+    margin: "3vw",
+    fontSize: "3vw",
     fontWeight: "bold",
     cursor: "pointer",
     textDecoration: "none",

@@ -80,6 +80,7 @@ const styles = {
   container: {
     width: "70vw",
     margin: "0 auto",
+    marginRight: "10vw",
     padding: "0.5rem",
     marginLeft: "1vw",
   },

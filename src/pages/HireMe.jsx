@@ -10,7 +10,7 @@ const styles = {
     textAlign: "center",
     margin: "7vw",
     marginBottom: "7vh",
-    height: "60vh",
+    height: "70vh",
     backgroundColor: "#fff",
     width: "70vw",
     marginLeft: "1.5vw",
