@@ -35,13 +35,11 @@ export default AboutMe
 // CSS in JSX
 const styles = {
   container: {
-    marginTop: "15px",
-    marginBottom: "15px",
-    // width: "90vw",
-    maxWidth: 600,
+    width: "70vw",
     padding: "2rem",
     borderRadius: "8px",
-    marginLeft: "190px",
+    marginLeft: "10vw",
+    marginTop: "30px",
     boxShadow:
       "2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1), -2px -2px 2px rgba(0.1, 0.1, 0.1, 0.1), 2px -2px 2px rgba(0.1, 0.1, 0.1, 0.1), -2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1)",
   },

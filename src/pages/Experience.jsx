@@ -70,7 +70,7 @@ const ExperiencePage = () => {
 }
 
 export default ExperiencePage
-c
+
 // CSS in JSX
 const styles = {
   container: {

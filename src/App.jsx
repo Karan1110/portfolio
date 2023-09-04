@@ -1,4 +1,3 @@
-import "./App.css"
 import AboutMe from "./pages/AboutMe"
 import ExperiencePage from "./pages/Experience"
 import ProjectsPage from "./pages/Projects"
@@ -32,7 +31,7 @@ function App() {
         backgroundImage: `url(https://media.istockphoto.com/id/1044136070/photo/holographic-neon-shiny-background-minimalist-style-millennial-colors.webp?b=1&s=170667a&w=0&k=20&c=9wtFW5xQKEozXaAAuawl-Mfah5afP22r4cPCbC3fDs8=)`,
         backgroundSize: "cover", // Use "cover" to cover the entire element
         width: "99vw", // Use "100vw" for viewport width
-        height: "680vh", // Use "100vh" for viewport height
+        height: "625vh", // Use "100vh" for viewport height
         margin: -8,
       }}
     >
@@ -112,10 +111,10 @@ const styles = {
   navList: {
     listStyleType: "none",
     display: "flex",
-    gap: "2rem",
+    gap: "0.5rem",
   },
   navItem: {
-    fontSize: "1.2rem",
+    fontSize: "1rem",
     fontWeight: "bold",
     cursor: "pointer",
     textDecoration: "none",

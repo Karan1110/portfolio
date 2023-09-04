@@ -3,13 +3,14 @@ import resume from "../assets/resume.pdf"
 
 const styles = {
   container: {
-    padding: "20px",
-    marginBottom: "30px",
+    padding: "3vw",
+    marginBottom: "5vh",
     borderRadius: "10px",
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
     textAlign: "center",
-    margin: "20px",
-    height: "330px",
+    margin: "7vw",
+    marginBottom: "7vh",
+    height: "60vh",
     backgroundColor: "#fff",
   },
   title: {
@@ -19,7 +20,7 @@ const styles = {
     marginBottom: "20px",
   },
   textarea: {
-    width: "90%",
+    width: "75vw",
     borderRadius: "5px",
     padding: "10px",
     border: "1px solid #ccc",
@@ -59,7 +60,7 @@ const HireMe = () => {
   const [email, setEmail] = useState("")
   const [subject, setSubject] = useState("")
 
-  const url = "http://localhost:5000" // Replace with your actual API endpoint
+  const url = "https://portfolio-backend-eit6.onrender.com/" // Replace with your actual API endpoint
   const sendEmail = () => {
     const emailData = {
       subject: subject,
@@ -98,7 +99,7 @@ const HireMe = () => {
       <input
         style={{
           height: "50px",
-          width: "400px",
+          width: "70vw",
           margin: "10px",
           borderRadius: "30px",
           padding: 7,
@@ -109,7 +110,7 @@ const HireMe = () => {
       <input
         style={{
           height: "50px",
-          width: "400px",
+          width: "70vw",
           margin: "10px",
           borderRadius: "30px",
           padding: 7,
@@ -129,7 +130,7 @@ const HireMe = () => {
         Send Message
       </button>
       <button onClick={handleDownloadClick} style={styles.button}>
-        Download File
+        Download Resume
       </button>
     </div>
   )
