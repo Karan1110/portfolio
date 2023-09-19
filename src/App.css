@@ -1,0 +1,84 @@
+/* Define a custom property for the scrollbar's border-radius */
+:root {
+  --scrollbar-border-radius: 200px;
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  /* color: white */
+  width: 12px; /* Adjust as needed */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Adjust as needed */
+  /* color:  */
+  border-radius: var(--scrollbar-border-radius); /* Use the custom property */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Adjust as needed */
+  border-radius: var(--scrollbar-border-radius); /* Use the custom property */
+}
+/* Navbar */
+.navbar {
+  z-index: 9999999999999999999999999;
+  opacity: 80%;
+  border-radius: 1500px;
+  background-color: white;
+  position: sticky;
+  top: 20px;
+  color: #fff;
+  /* line */
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vw;
+  height: 3vh;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 968px) {
+  .navbar {
+    width: 90vw; /* Set the width to 90vw for mobile screens */
+  }
+}
+.logo {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.nav-list {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* text-align: justify; */
+  /* text-decoration: rgba(0, 0, 0, 0.1); */
+  align-items: center;
+  gap: 3vw;
+}
+
+.nav-item {
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  color: grey;
+  font-family: Lato, sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Content Container */
+.content {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}

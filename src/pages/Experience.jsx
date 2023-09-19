@@ -1,10 +1,9 @@
 import React from "react"
-
+import "./css.css"
 const ExperiencePage = () => {
   return (
     <div style={styles.container}>
-      <h2 style={styles.pageTitle}>My Experience</h2>
-      <div style={styles.experienceCard}>
+      <div style={styles.experienceCard} className="card">
         <h3 style={styles.company}>Youth Story</h3>
         <p style={styles.position}>Full Stack Developer</p>
         <p style={styles.duration}>2018 - Present</p>
@@ -28,7 +27,7 @@ const ExperiencePage = () => {
           </li>
         </ul>
       </div>
-      <div style={styles.experienceCard}>
+      <div style={styles.experienceCard} className="card">
         <h3 style={styles.company}>Nexstead Games</h3>
         <p style={styles.position}>Full Stack Developer</p>
         <p style={styles.duration}>2018 - Present</p>
@@ -74,23 +73,25 @@ export default ExperiencePage
 // CSS in JSX
 const styles = {
   container: {
-    width: "90vw",
-    margin: "0 auto",
-    padding: "0.5rem",
+    // width: "85vw",
+    // marginTop: "-7vh",
+    padding: "0.2rem",
     opacity: "100%",
-    marginLeft: "1vw",
+    marginLeft: "0vw",
   },
   pageTitle: {
     fontSize: "2.5rem",
     fontWeight: "bold",
-    marginBottom: "2rem",
-    color: "#333",
+    marginBottom: "2vw",
+    // backgroundColor: "rgb(230, 230, 255)",
+    // textDecoration: "underline",
   },
   experienceCard: {
-    padding: "1.5rem",
+    padding: "1rem",
     borderRadius: "50px",
     boxShadow: "4px 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2)",
     marginBottom: "2rem",
+    backgroundColor: "#f9f9f9",
   },
   company: {
     fontSize: "1.8rem",

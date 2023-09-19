@@ -1,10 +1,20 @@
 import AboutMe from "./pages/AboutMe"
-import ExperiencePage from "./pages/Experience"
 import ProjectsPage from "./pages/Projects"
 import React, { useRef } from "react"
 import HireMe from "./pages/HireMe"
-import "./aboutme.css"
+import "./App.css"
+import { TbLayoutNavbarCollapseFilled } from "react-icons/tb"
+import { BsFillCloudDownloadFill } from "react-icons/bs"
+import "./pages/css.css"
 
+import resume from "./assets/resume.pdf"
+const handleDownloadClick = () => {
+  const anchor = document.createElement("a")
+  anchor.href = resume
+  anchor.download = "resume.pdf" // Optional: Set the desired file name
+
+  anchor.click()
+}
 function App() {
   const aboutRef = useRef(null)
   const experienceRef = useRef(null)
@@ -28,58 +38,40 @@ function App() {
 
   return (
     <div
-      className="container"
       style={{
-        backgroundImage: `url(https://media.istockphoto.com/id/1044136070/photo/holographic-neon-shiny-background-minimalist-style-millennial-colors.webp?b=1&s=170667a&w=0&k=20&c=9wtFW5xQKEozXaAAuawl-Mfah5afP22r4cPCbC3fDs8=)`,
-        backgroundSize: "cover", // Use "cover" to cover the entire element
-        width: "98vw", // Use "100vw" for viewport width
-        height: "100%", // Use "100vh" for viewport height
-        margin: -8,
+        // backgroundImage: `url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgICAgIBwcHBwcHCAoHBwcHBw8ICQcKFREWFhUREx8YKCggGCYxJxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDw0NDisZFRkrKy0tKysrKy0rKystKystKysrKysrKysrKysrKysrLSsrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAaAAEBAQEAAwAAAAAAAAAAAAABAAIEAwUH/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQGBf/EABcRAQEBAQAAAAAAAAAAAAAAAAABEQL/2gAMAwEAAhEDEQA/APq6SbO4UGsnAKzWqxVwCs00VpCYrNarNXCZopoWms1KpSaAUaKCCGdSSCaiiEVJIJSSBBEAIEGaBANJIDUkgNe2Q1PmvqCilmqgFZrVYq4BWaazVwhWaazVxIoqoq4mighSaEkaKiDAzqKUCKUkEVIkk6ymgC0IqwxrKKBsogz1JIBJIB7NAPnvrFks05CVZprNXAKzTWaqEKzTWa0hCiqhcTRQQpFSSDOoohnUYiGdqOIki0Ikk6EcQTrKaGAayijPWQ0DPQigNCKA13hBwvtHWSFQhWaaFQBmmsrhM0U1mriaGa0zVxNQSNnUkjZ0whqEzpOCNQmVqhWGQmdqxYcOEi1lY1iBazgawAaA0DPWQ2ANZxYUZ6EQBrsQTkfeQqFMYBSFRLNFNZqoQrNarNXE0VmtBcRWUQpFREjQZdKNQSNSEy6qjUikakTWNqkMhhkSztGHDiwtRaMDWIanWcGNYKY1kNYDPWUaDPQiAehFAa6FUHK9EgQYFBoqomiimiqiazWWqFxNZDQUigY1gxTO1SFQwmVUjUUakJj1TI1BGomseqo1IpGoljaMWNYiRazQ2KE6wK1QZ6zRWqzVHooNBq0JIxoRQN5kk5npQqkZCimimQopCoigELTQGgbOhEnrLoYcWGQmXVUjcEjUJj1VG5BGonWHVUjUgahMqkUTMM1qgyZZarNOGGa1WaowKaDUEEYSSA15wQ5nqEkjAoKNNAKNFZRCoihFKZULDiwaz6WGLDgY9KNQRqExphEaiWNUaBDKohEzqZpFMCs01mnAKKqKpQoqoUaCoMFBA3QknK9SkkCQNCk1Ao0UAo2dCKPWdBSPWXRSI1j0jFCTHpNQEmVJZQZVoIaEIJkyVZptZOBVmqs1SlRUKo0tC0zIGkB1UEOR6pIwAkkjTQiDZ1JI0VJI2NSRDKqEEMeikoGXRUSgZUpAM6QgEVUVCqIVmms04BWaWVQ1QqyoyENMyWUA7Uk4nqkkjKqgg01JIM6kkpnUkgyqiSNlSQgx6KiUDLopIMqkhQzqoINIopZqiFZrVZpwM1mtVmqOM1IVRoJGaSQDuSThepSSMqqEjRUkjRUkgzqSRsqkkbKkhBj0SkGVSSDKoVIIqFSNArNKUTFZqSoGRUjimWSlGAkYSSMP/9k=)`,
+        backgroundSize: "cover",
+        backgroundRepeat: "initial",
         display: "flex",
         flexDirection: "column",
-        // gap: "3vw",
         justifyContent: "center",
         alignItems: "center",
+        fontFamily: "Lato, sans-serif",
+        margin: -7,
       }}
     >
-      <nav className="navbar" style={styles.navbar}>
-        <ul className="nav-list" style={styles.navList}>
-          <li
-            className="nav-item"
-            style={styles.navItem}
-            onClick={scrollToAbout}
-          >
+      <nav className="navbar">
+        <ul className="nav-list">
+          <li className="nav-item" onClick={scrollToAbout}>
             About
           </li>
-          <li
-            className="nav-item"
-            style={styles.navItem}
-            onClick={scrollToExperience}
-          >
-            Experience
-          </li>
-          <li
-            className="nav-item"
-            style={styles.navItem}
-            onClick={scrollToProjects}
-          >
+          <li className="nav-item" onClick={scrollToProjects}>
             Projects
           </li>
-          <li
-            className="nav-item"
-            style={styles.navItem}
-            onClick={scrollToHireMe}
-          >
-            Hire Me
+          <li className="nav-item" onClick={scrollToHireMe}>
+            Contact
           </li>
           {/* Other navigation items */}
         </ul>
       </nav>
       <div ref={aboutRef}>
         <AboutMe />
-      </div>
-      <div ref={experienceRef}>
-        <ExperiencePage />
+        <div style={{ textAlign: "center", padding: 0 }}>
+          <button onClick={handleDownloadClick} className="button2">
+            {" "}
+            Download Resume <BsFillCloudDownloadFill />
+          </button>
+        </div>
       </div>
       <div ref={projectsRef}>
         <ProjectsPage />
@@ -89,51 +81,6 @@ function App() {
       </div>
     </div>
   )
-}
-const styles = {
-  navbar: {
-    opacity: "80%",
-    borderRadius: 150,
-    backgroundColor: "white",
-    position: "sticky",
-    top: 20, // Adjust to "bottom" if you want it at the
-    color: "#fff",
-    paddingTop: "2vh",
-    paddingBottom: "2vh",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    width: "48vh",
-    height: "2vh",
-    boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.1)",
-  },
-  logo: {
-    fontSize: "10px",
-    fontWeight: "bold",
-  },
-  navList: {
-    listStyleType: "none",
-    display: "flex",
-  },
-  navItem: {
-    margin: "0.7vh",
-    fontSize: "1.8vh",
-    fontWeight: "bold",
-    cursor: "pointer",
-    color: "grey",
-    fontFamily: "Lato, sans-serif",
-    // opacity: "100%",
-    transition: "color 0.3s ease-in-out",
-  },
-  content: {
-    width: "100%",
-    maxWidth: "800px",
-    marginTop: "20px",
-    padding: "20px",
-    backgroundColor: "#fff",
-    borderRadius: "8px",
-    boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.1)",
-  },
 }
 
 export default App

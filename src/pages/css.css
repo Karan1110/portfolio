@@ -1,0 +1,64 @@
+@media screen and (max-width: 968px) {
+  .image {
+    display: none;
+  }
+  .card {
+    padding: 2vw;
+    width: 90vw;
+    margin-bottom: 3vw;
+    font-size: 0.8rem;
+  }
+
+  .skill {
+    text-align: center;
+  }
+  .butt {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1468px) {
+  .card {
+    font-size: 1rem;
+    width: 60vw;
+  }
+}
+
+.image:hover {
+  transform: rotate(15deg); /* Tilt the card by 5 degrees on hover */
+}
+/* Default styles for the button */
+
+.button {
+  background-color: #ff9900;
+  color: #fff;
+  font-size: large;
+  border: none;
+  padding: 12px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 1000px;
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+.button2 {
+  background-color: #ff9900;
+  color: #fff;
+  border-radius: 1000px;
+  font-size: large;
+  border: none;
+  padding: 12px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0vh;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: aliceblue;
+}
+.button2:hover {
+  background-color: darkgoldenrod;
+}

@@ -1,16 +1,19 @@
 import React, { useState } from "react"
-import resume from "../assets/resume.pdf"
+import { AiOutlineSend } from "react-icons/ai"
+import "./css.css"
+import { MdMarkEmailRead } from "react-icons/md"
 
 const styles = {
   container: {
-    padding: "3vw",
-    marginBottom: "5vh",
-    borderRadius: "10px",
+    padding: "1vw",
     textAlign: "center",
-    marginBottom: "7vh",
     height: "70vh",
     width: "85vw",
-    marginLeft: "1.5vw",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "-10vh",
   },
   title: {
     color: "#333",
@@ -20,12 +23,14 @@ const styles = {
   },
   textarea: {
     width: "65vw",
-    borderRadius: "5px",
-    padding: "10px",
+    borderRadius: "50px",
+    padding: "20px",
     border: "1px solid #ccc",
     resize: "none",
     fontSize: "16px",
     lineHeight: "1.5",
+
+    borderColor: "aqua",
   },
   button: {
     backgroundColor: "#FF9900",
@@ -41,17 +46,6 @@ const styles = {
     fontSize: "18px",
     fontWeight: "bold",
   },
-}
-
-// Define the file URL
-const fileUrl = "../assets/resume.pdf" // Replace with the actual file URL
-
-const handleDownloadClick = () => {
-  const anchor = document.createElement("a")
-  anchor.href = resume
-  anchor.download = "resume.pdf" // Optional: Set the desired file name
-
-  anchor.click()
 }
 
 const HireMe = () => {
@@ -94,25 +88,29 @@ const HireMe = () => {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.title}>Send an email!</h2>
+      <h2 style={styles.title}>
+        Send me an E-Mail! <MdMarkEmailRead />{" "}
+      </h2>
       <input
         style={{
-          height: "50px",
-          margin: "10px",
+          height: "30px",
           borderRadius: "30px",
           padding: 7,
           width: "65vw",
+          borderColor: "aqua",
         }}
         placeholder="kindly enter the Subject"
         onChange={(e) => setSubject(e.target.value)}
       />
       <input
         style={{
-          height: "50px",
+          height: "30px",
           width: "65vw",
           margin: "10px",
-          borderRadius: "30px",
-          padding: 7,
+          borderRadius: "100px",
+          padding: 10,
+          // color: "black",
+          borderColor: "aqua",
         }}
         placeholder="Enter your email so i can get back to you"
         onChange={(e) => setEmail(e.target.value)}
@@ -125,11 +123,8 @@ const HireMe = () => {
         cols={50}
       />
       <br />
-      <button style={styles.button} onClick={sendEmail}>
-        Send Message
-      </button>
-      <button onClick={handleDownloadClick} style={styles.button}>
-        Download Resume
+      <button className="button2" onClick={sendEmail}>
+        Send Email <AiOutlineSend />
       </button>
     </div>
   )
